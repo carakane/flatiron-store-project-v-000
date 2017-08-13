@@ -1,7 +1,7 @@
-10.times do 
+10.times do
   Item.create(
-    title: Faker::Commerce.product_name, 
-    inventory: Faker::Number.number(2), 
+    title: Faker::Commerce.product_name,
+    inventory: Faker::Number.number(2),
     price: Faker::Number.number(4)
   )
   Category.create(title: Faker::Commerce.department)
@@ -13,3 +13,12 @@ Item.all.each do |item|
   item.save
   counter += 1
 end
+
+10.times do
+  User.create(
+    email: Faker::Internet.safe_email,
+    password: Faker::Internet.password
+  )
+end
+
+# Cart.create(user_id: User.first)
