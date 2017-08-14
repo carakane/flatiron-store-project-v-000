@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 20170814164002) do
 
   create_table "carts", force: :cascade do |t|
     t.integer "user_id"
+    t.string  "status"
   end
 
   create_table "categories", force: :cascade do |t|
@@ -41,7 +42,6 @@ ActiveRecord::Schema.define(version: 20170814164002) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.integer  "cart_id"
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
