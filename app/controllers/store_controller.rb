@@ -4,4 +4,8 @@ class StoreController < ApplicationController
     @categories = Category.all
     @items = Item.available_items
   end
+
+  def logged_in?
+
+  end
 end
