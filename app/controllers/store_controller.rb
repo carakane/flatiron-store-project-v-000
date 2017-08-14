@@ -5,7 +5,4 @@ class StoreController < ApplicationController
     @items = Item.available_items
   end
 
-  def logged_in?
-
-  end
 end
