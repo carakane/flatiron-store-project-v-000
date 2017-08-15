@@ -4,6 +4,7 @@ class CreateOrders < ActiveRecord::Migration
       t.integer :cart_id
       t.integer :user_id
       t.integer :total
+      t.string :status
     end
   end
 end

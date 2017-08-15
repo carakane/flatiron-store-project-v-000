@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20170814164002) do
     t.integer "cart_id"
     t.integer "user_id"
     t.integer "total"
+    t.string  "status"
   end
 
   create_table "users", force: :cascade do |t|
